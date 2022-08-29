@@ -1,0 +1,7 @@
+ALTER TABLE `loan_app`.`contracts` 
+ADD COLUMN `guarantor_id` INT(11) NULL AFTER `added_user_id`;
+
+ALTER TABLE `loan_app`.`guarantors` 
+CHANGE COLUMN `gua_id` `gua_id` INT(11) NOT NULL AUTO_INCREMENT ,
+ADD PRIMARY KEY (`gua_id`);
+;

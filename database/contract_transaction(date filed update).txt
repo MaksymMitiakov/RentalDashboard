@@ -1,0 +1,3 @@
+
+ALTER TABLE `loan_app`.`contract_transactions` 
+CHANGE COLUMN `date` `date` DATE NULL DEFAULT NOW() ;
